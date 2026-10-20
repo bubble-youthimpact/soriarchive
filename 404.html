@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Page not found · SoriArchive</title>
+<script>
+  /* 404.html is served at any depth, so find the site root first.
+     Works for a custom domain ("/") and for username.github.io/repo/ ("/repo/"). */
+  (function () {
+    var seg = location.pathname.split("/").filter(Boolean)[0];
+    var root = /\.github\.io$/.test(location.hostname) && seg ? "/" + seg + "/" : "/";
+    window.SORI_ROOT = root;
+    document.write('<base href="' + root + '">');
+  })();
+</script>
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@700&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="404" data-base="">
+<header id="site-header"></header>
+
+<main data-view="404">
+  <div class="wrap nf">
+    <div>
+      <div class="code">404</div>
+      <div class="wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <h1 data-ko="이 소리는 아직 기록되지 않았어요">This sound hasn’t been recorded yet</h1>
+      <p data-ko="찾으시는 페이지가 없거나 이동되었습니다.">The page you’re looking for doesn’t exist or has moved.</p>
+      <div class="hero-ctas" style="justify-content:center">
+        <a class="btn" href="./" data-route="home" data-ko="홈으로">Back to home</a>
+        <a class="btn btn-ghost" href="sounds/" data-route="sounds" data-ko="소리 둘러보기">Explore sounds</a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer id="site-footer"></footer>
+<script src="assets/data.js"></script>
+<script src="assets/content.js"></script>
+<script src="assets/site.js"></script>
+</body>
+</html>

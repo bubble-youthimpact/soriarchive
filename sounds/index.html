@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>All Sounds · SoriArchive</title>
+<meta name="description" content="Browse Korean labor songs by genre and region, with lyrics, dialect notes and audio.">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@700&display=swap">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-page="sounds" data-base="../">
+<header id="site-header"></header>
+
+<main data-view="sounds">
+  <div class="wrap">
+    <div class="page-head reveal">
+      <h1 data-ko="모든 소리">All sounds</h1>
+      <p data-ko="각 지역의 고유한 소리와 전통의 목소리, 의례의 노래, 잊혀가는 민요를 만나보세요.">Discover the unique sounds of every province and explore a digital archive of traditional voices, ritual chants, and forgotten songs.</p>
+    </div>
+
+    <div class="filters">
+      <div class="qfield"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input id="f-q" type="search" placeholder="Search titles, lyrics, dialect notes…" data-ko-ph="제목, 가사, 방언 해설 검색…" aria-label="Search sounds"></div>
+      <div class="field-sel">
+        <span class="ico" aria-hidden="true"><img src="../assets/img/icon-genre.avif" alt=""></span>
+        <div class="select"><select id="f-genre" aria-label="Genre"></select><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></div>
+      </div>
+      <div class="field-sel">
+        <span class="ico" aria-hidden="true"><img src="../assets/img/icon-region.avif" alt=""></span>
+        <div class="select"><select id="f-region" aria-label="Region"></select><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></div>
+      </div>
+      <button class="reset" id="f-reset" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11a8 8 0 0 0-14.3-4.9L4 8"/><path d="M4 4v4h4"/><path d="M4 13a8 8 0 0 0 14.3 4.9L20 16"/><path d="M20 20v-4h-4"/></svg><span data-ko="초기화">Reset</span></button>
+    </div>
+
+    <div class="result-bar" id="result-bar" aria-live="polite"></div>
+    <div class="sound-list" id="sound-list"></div>
+    <button class="btn btn-ghost load-more" id="load-more" type="button" hidden>Load more</button>
+  </div>
+</main>
+
+<footer id="site-footer"></footer>
+<script src="../assets/data.js"></script>
+<script src="../assets/content.js"></script>
+<script src="../assets/site.js"></script>
+</body>
+</html>
