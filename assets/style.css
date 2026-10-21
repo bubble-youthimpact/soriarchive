@@ -406,3 +406,12 @@ mark{background:#E6F0D6;color:inherit;border-radius:3px;padding:0 2px}
 .menu-btn,.mm-close,.icon-btn,.lang-pill{color:var(--ink);background:var(--white);-webkit-appearance:none;appearance:none}
 .menu-btn svg,.mm-close svg,.icon-btn svg{stroke:var(--ink);display:block}
 button{color:inherit}
+
+/* ---------- v3: compact header search, region list beside text ---------- */
+.header-tools .search{display:none}
+.search-btn{display:grid}
+@media (max-width:960px){ .search-btn{display:none} }
+.hero-regions{margin-top:36px;padding-top:24px;border-top:1px solid var(--line);max-width:520px}
+.hero-regions-label{display:block;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);font-weight:600;margin-bottom:12px}
+.hero-regions .region-legend{justify-content:flex-start;max-width:none;margin:0}
+@media (max-width:760px){ .hero-regions{margin-top:28px} }
