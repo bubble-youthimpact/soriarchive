@@ -54,7 +54,7 @@
   /* ---------- links ---------- */
   var PAGES = [
     { id: "home", href: "", en: "Home", ko: "홈" },
-    { id: "about", href: "about/", en: "About Us", ko: "소개" },
+    { id: "about", href: "about/", en: "About", ko: "소개" },
     { id: "sounds", href: "sounds/", en: "Sounds", ko: "소리" },
     { id: "news", href: "news/", en: "News Coverage", ko: "언론 보도" },
     { id: "partnerships", href: "partnerships/", en: "Partnerships", ko: "파트너십" },
